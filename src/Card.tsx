@@ -11,6 +11,7 @@ const Card = (): React.ReactElement => {
 
     const handleToggle = (id: number) => {
         let mapped = ratingList.map(ratingListItem => {
+          // ToDo: Id type varies between string & number...
           return ratingListItem.id == id ? { ...ratingListItem, isSelected: true } : { ...ratingListItem, isSelected: false };
         });
         setRatingList(mapped);
