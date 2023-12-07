@@ -2,11 +2,13 @@
 
 ![Preview - Interactive rating component](./public/preview.png)
 
+[=> Live Preview on Vercel](https://fm-interactive-rating-component-ebon.vercel.app/)
+
 ## Moin! 👋
 
-Thanks for checking out my solution of the front-end coding challenge. Feel free to add any comments!
+Thanks for checking out my solution to the front-end coding challenge. Feel free to add any comments!
 
-I used React, TypeScript and CSS3, including custom properties, to full fill this challenge.
+I used React, TypeScript, and CSS3, including custom properties, to fulfill this challenge.
 
 ## The challenge
 
@@ -21,3 +23,7 @@ The users should be able to:
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
 
+## Run project
+```
+npm start
+```
