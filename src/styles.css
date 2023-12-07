@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: #FC7615;
+  --midBlue: #22303D;
+  --lightBlue: #7C8897;
+  --darkBlue: #131518;
+
+  --textColor: #878D96;
+  --lighterTextColor: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* ToDo: Correct font-family ??? */
+
+  background: var(--darkBlue);
+  line-height: 1.6;
+  font-size: 14px;
+  color: var(--textColor);
+  min-width: 420px;
+}
+
+h1 {
+  color: var(--lighterTextColor);
+  margin: 30px 0 10px;
+  line-height: 1.2;
+}
+
+button, 
+fieldset,
+input {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.page {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  background-image: linear-gradient(to bottom, #20262F 0%, #181E27 50%);
+  padding: 30px;
+  border-radius: 30px;
+  width: 350px;
+  height: max-content;
+  min-height: 300px;
+}
+
+/* ----- Selection View ----- */
+
+.card-icon {
+  display: inline-flex;
+  border-radius: 50%;
+  background-color: var(--midBlue);
+  height: 45px;
+  width: 45px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.rating-list-item span {
+  display: inline-flex;
+  border-radius: 50%;
+  background-color: var(--midBlue);
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+  height: 45px;
+  width: 45px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.rating-list-item span.selected {
+  background-color: var(--lightBlue);
+  color: var(--lighterTextColor);
+}
+.rating-list-item span:hover {
+  background-color: var(--orange);
+  color: var(--lighterTextColor);
+}
+
+.rating-list-item input {
+  display: none;
+}
+
+.btn-primary {
+  display: inline-flex;
+  border-radius: 20px;
+  background-color: var(--orange);
+  transition: background-color 0.3s ease;
+  color: var(--lighterTextColor);
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: var(--lighterTextColor);
+  color: var(--orange);
+}
+
+/* ----- Result View ----- */
+
+.result-view {
+  text-align: center;
+}
+
+.card-result {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 25px;
+  background-color: var(--midBlue);
+  color: var(--orange);
+  line-height: 0;
+}

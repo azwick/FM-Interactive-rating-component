@@ -1,0 +1,26 @@
+[{
+    "id": 1,
+    "value": "1",
+    "name": "rating",
+    "isSelected": false
+  }, {
+    "id": 2,
+    "value": "2",
+    "name": "rating",
+    "isSelected": false
+  },{
+    "id": 3,
+    "value": "3",
+    "name": "rating",
+    "isSelected": false
+  },{
+    "id": 4,
+    "value": "4",
+    "name": "rating",
+    "isSelected": false
+  },{
+    "id": 5,
+    "value": "5",
+    "name": "rating",
+    "isSelected": false
+  }]
